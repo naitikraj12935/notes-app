@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+   
+}
+body{
+    background-color: aqua;
+}
+.main{
+
+    height: 100vw;
+    width: 100vw;
+   
+  display: flex;
+  flex-wrap: wrap;
+}
+.notes{
+    height: 50vh;
+    width: 30vw;
+    margin: 2rem 2rem;
+    background-color: rgb(243, 197, 197);
+   
+}
+.tool
+{
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px 5px 5px 86%;
+    gap: 5px;
+}
+.tool i:hover{
+   
+   cursor: pointer;
+    scale: 1.7;
+}
+.notes textarea{
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+
+}
+.notes textarea:focus{
+    border: none;
+    outline: none;
+}
+.add{
+    background-color: aqua ;
+   
+    border: none;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 6rem;
+  
+
+}
+
+button:hover{
+    scale: 1.2;
+    cursor: pointer;
+
+}
+
+@media (max-width:660px)
+{
+    .notes{
+        height: 70vh;
+        width: 100vw;
+    }
+    .add{
+       opacity: 0.7;
+        border-radius: 50px;
+    }
+}
